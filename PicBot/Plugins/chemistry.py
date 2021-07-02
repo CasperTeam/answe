@@ -1,8 +1,7 @@
 from pyrogram import Client, filters
+import requests
 import re
 from bs4 import BeautifulSoup
-import requests
-
 
 @Client.on_message(filters.command(["chemistry"]))
 async def chemistry(bot, update):
