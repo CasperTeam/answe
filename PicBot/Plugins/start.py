@@ -11,6 +11,6 @@ async def start(bot, update):
             mypic,
             text,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("website", url="https://teletype.in/@satyendra/Answers")],[InlineKeyboardButton("contact mr", url="https://t.me/a_L_Satya")]]
+                [[InlineKeyboardButton("website", url="https://teletype.in/@satyendra/Answers")],[InlineKeyboardButton("Contact Me", url="https://t.me/a_L_Satya")]]
             ),
         )
