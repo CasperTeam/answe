@@ -5,7 +5,7 @@ from pyrogram.types.update import Update
 
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    if Update.from_user.id not in Config.AUTH_USERS:
+    if update.from_user.id not in Config.AUTH_USERS:
      await bot.reply_text("You are not authorized") 
      return
     text=f"__Hello!__\nI'm answersbot\nCheck /help to get available commands"
