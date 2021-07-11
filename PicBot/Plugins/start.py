@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    if message_id.from_user.id not in Config.AUTH_USERS:
+    if update.message_id.from_user.id not in Config.AUTH_USERS:
      await bot.reply_text("You are not authorized") 
      return
     text=f"__Hello!__\nI'm answersbot\nCheck /help to get available commands"
