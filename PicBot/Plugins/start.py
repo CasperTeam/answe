@@ -4,9 +4,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    if message.from_user.id not in Config.AUTH_USERS:
-     await bot.reply_text("You are not authorized") 
-     return
     text=f"__Hello!__\nI'm answersbot\nCheck /help to get available commands"
     mypic="https://telegra.ph/file/72fc24c9fff47f87ed937.jpg"
     await bot.send_photo(
