@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    if filter.user.from_user.id not in Config.AUTH_USERS:
+    if message.from_user.id not in Config.AUTH_USERS:
      await bot.reply_text("You are not authorized") 
      return
     text=f"__Hello!__\nI'm answersbot\nCheck /help to get available commands"
