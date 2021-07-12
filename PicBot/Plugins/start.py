@@ -18,4 +18,4 @@ async def start(bot, update):
             ),
         )
     else:
-        await bot.reply_text("You are not authorized 😂")
+        await bot.send.message("You are not authorized 😂")
