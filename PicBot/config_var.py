@@ -33,3 +33,4 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+    AUTH_USERS = int(os.environ.get("AUTH_USERS", 1741347822))
