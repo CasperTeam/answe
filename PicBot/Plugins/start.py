@@ -1,11 +1,12 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.types.update import Update
+from PicBot.config_var import Config
 
 
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    if update.from_user.id not in config.AUTH_USERS:
+    if update.from_user.id not in Config.AUTH_USERS:
      await bot.reply_text("You are not authorized") 
      return
     text=f"__Hello!__\nI'm answersbot\nCheck /help to get available commands"
