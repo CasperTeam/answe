@@ -21,5 +21,5 @@ async def start(bot, update):
         text="You are not authorized 😂"
         await bot.send_message(
             update.chat.id,
-            text,
+            text, reply_to_message_id=update.message_id
         )
