@@ -9,7 +9,8 @@ async def help_menu(bot, update):
       text += f"➤ /help - To get this message\n"
       text += f"➤ /physics - sends physics answers from website\n"
       text += f"➤ /chemistry - sends chemistry answers from website\n"
-      text += f"➤ /maths - sends maths answers from website"
+      text += f"➤ /maths - sends maths answers from website\n"
+      text += f"➤ /all - main command to get all answers in single message"
       await bot.send_message(update.chat.id, text=text)
      else:
         text="**Wait A Min**\n**Who Are You**"
