@@ -28,12 +28,9 @@ def fetch_heroku_git_url(api_key, app_name):
     return heroku_app.git_url.replace("https://", "https://api:" + api_key + "@")
     
 class Config(object):
-    API_ID = int(os.environ.get("API_ID", 1))
-    API_HASH = os.environ.get("API_HASH", None)
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+    API_ID = 2171111
+    API_HASH = "fd7acd07303760c52dcc0ed8b2f73086"
+    BOT_TOKEN = "5067445854:AAFe_Em5hNWTQbaDq5kFfWNsR9JPe5M6RJc"
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-    AUTH_USERS = 1089528685
-    
-   #AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) if os.environ.get("AUTH_USERS", "") else None
-
+    AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) if os.environ.get("AUTH_USERS", "") else None
